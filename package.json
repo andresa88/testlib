@@ -1,12 +1,12 @@
 {
-  "name": "mylib",
+  "name": "testlib",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "run-s build",
-    "build": "echo Hello!!!!"
+    "build": "touch out.js"
   },
   "keywords": [],
   "author": "",
