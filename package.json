@@ -10,7 +10,9 @@
   "types": "dist/ash.d.ts",
   "typings": "dist/ash.d.ts",
   "scripts": {
-    "prepare": "run-s echo build",
+    "prepare": "run-s lerna:bootstrap build",
+    "lerna:clean": "lerna clean -y",
+    "lerna:bootstrap": "run-s lerna:clean",
     "build": "run-s build:clean build:mk build:test",
     "build:clean": "rimraf dist",
     "build:test": "touch dist/out.js",
