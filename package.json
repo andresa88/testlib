@@ -23,7 +23,7 @@
     "build:test": "touch packages/dist/out.js && touch packages/my.txt && touch prepare.txt && touch prepare1.txt",
     "echo2": "run-s echo",
     "echo": "echo echo.txt && touch echo.txt",
-    "preinstall": "echo preInstall && touch preinstall.txt && run-s echo",
+    "preinstall": "echo preInstall && touch preinstall.txt",
     "postinstall": "echo postinstallEcho && touch postinstall.txt"
   },
   "repository": {
