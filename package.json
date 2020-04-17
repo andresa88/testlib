@@ -21,9 +21,8 @@
     "build:clean": "rimraf packages/**/dist",
     "build:mk": "mkdir packages\\dist",
     "build:test": "touch packages/dist/out.js",
-    "echo": "touch echo.txt",
-    "postinstall": "postinstallEcho && touch postinstall.txt",
-    "postinstallEcho": "echo postinstall"
+    "echo": "echo echo.txt && touch echo.txt",
+    "postinstall": "echo postinstallEcho && touch postinstall.txt"
   },
   "repository": {
     "type": "git",
