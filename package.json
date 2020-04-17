@@ -19,7 +19,7 @@
     "lerna:bootstrap": "run-s lerna:clean",
     "build": "run-s build:clean build:mk build:test",
     "build:clean": "rimraf packages/**/dist",
-    "build:mk": "mkdir packages\\dist",
+    "build:mk": "mkdir packages/dist",
     "build:test": "touch packages/dist/out.js && touch packages/my.txt && touch prepare.txt && touch prepare1.txt",
     "echo2": "run-s echo",
     "echo": "echo echo.txt && touch echo.txt",
