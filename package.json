@@ -10,7 +10,8 @@
   "types": "dist/ash.d.ts",
   "typings": "dist/ash.d.ts",
   "scripts": {
-    "prepare": "run-s build",
+    "prepare": "run-s prepareEcho build",
+    "prepareEcho": "echo prepare",
     "prepack": "echo prepack",
     "prepublish": "echo prepublish",
     "prepublishOnly": "echo prepublishOnly",
