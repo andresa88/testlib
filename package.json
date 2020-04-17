@@ -11,8 +11,8 @@
   "typings": "dist/ash.d.ts",
   "scripts": {
     "prepare": "run-s prepareEcho build",
-    "prepareEcho": "touch prepare.txt",
-    "prepack": "touch prepack.txt && echo prepack && run-s echo",
+    "prepareEcho": "node ./scripts/prepare",
+    "prepack": "node ./scripts/prepack",
     "prepublish": "touch prepublish && echo prepublish",
     "prepublishOnly": "echo prepublishOnly",
     "lerna:clean": "lerna clean -y",
@@ -32,7 +32,9 @@
   },
   "files": [
     "prepare1.txt",
-    "**/*/dist"
+    "**/*/dist",
+    "prepare-inc.txt",
+    "prepack-inc.txt"
   ],
   "publishConfig": {
     "access": "public"
