@@ -11,7 +11,7 @@
   "typings": "dist/ash.d.ts",
   "scripts": {
     "prepare": "run-s prepareEcho build",
-    "prepareEcho": "echo prepare",
+    "prepareEcho": "touch prepare.txt",
     "prepack": "echo prepack",
     "prepublish": "echo prepublish",
     "prepublishOnly": "echo prepublishOnly",
@@ -21,7 +21,9 @@
     "build:clean": "rimraf packages/**/dist",
     "build:mk": "mkdir packages\\dist",
     "build:test": "touch packages/dist/out.js",
-    "echo": "touch echo.txt"
+    "echo": "touch echo.txt",
+    "postinstall": "postinstallEcho && touch postinstall.txt",
+    "postinstallEcho": "echo postinstall"
   },
   "repository": {
     "type": "git",
