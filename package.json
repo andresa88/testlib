@@ -30,7 +30,6 @@
     "type": "git",
     "url": "https://github.com/andresa88/testlib"
   },
-  
   "publishConfig": {
     "access": "public"
   },
