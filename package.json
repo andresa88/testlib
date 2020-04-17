@@ -30,12 +30,7 @@
     "type": "git",
     "url": "https://github.com/andresa88/testlib"
   },
-  "files": [
-    "prepare1.txt",
-    "**/*/dist",
-    "**/*/prepare-inc.txt",
-    "**/*/prepack-inc.txt"
-  ],
+  
   "publishConfig": {
     "access": "public"
   },
