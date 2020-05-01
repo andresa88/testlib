@@ -1,7 +1,7 @@
 {
   "name": "test.lib",
   "license": "MIT",
-  "version": "1.1.1",
+  "version": "1.1.5",
   "description": "Typescript port of Ash - Entity Component System framework",
   "homepage": "https://icek.github.io/ash",
   "main": "index.js",
@@ -9,8 +9,12 @@
   "module": "dist/ash.mjs",
   "types": "dist/ash.d.ts",
   "typings": "dist/ash.d.ts",
+  "files": [
+    "./dist2/main.js"
+  ],
   "scripts": {
-    "prepare": "run-s prepareEcho build",
+    "prepare": "mkdir dist2 && touch dist2/main.js",
+    "_prepare": "run-s prepareEcho build",
     "prepareEcho": "node ./scripts/prepare",
     "prepack": "node ./scripts/prepack",
     "prepublish": "touch prepublish && echo prepublish",
